@@ -1,70 +1,47 @@
 var express = require('express');
-var path    = require("path");
-
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var fs = require('fs');
+var app = express();
+var YQL = require('yql');
 var cors = require('cors');
 
-var app = express();
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/build'));
+app.use(express.static(__dirname + '/public'));
 
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
-var APISample;
-
-
-app.get('/',function(req,res){
-  res.sendFile((path.join(__dirname + '/index.html')));
+app.get('/', function(request, response) {
+  response.render('pages/index');
 });
 
-app.use(bodyParser.urlencoded({
-        extended: false,
-     parameterLimit: 10000,
-     limit: '50mb'
-}));
-
-app.use(cookieParser());
-
-fs.readFile('./app/js/utils/APISample.json', 'utf8', function(err, data) {
-    if (err) throw err;
-    APISample = JSON.parse(data);
-});
-
-var whitelist = ['http://localhost:3001','http://localhost:8080','https://serviceworkbench.firebaseapp.com'];
-var corsOptions = {
-    origin: function(origin, callback) {
-        var originIsWhitelisted = whitelist.indexOf(origin) !== -1;
-        callback(null, originIsWhitelisted);
+app.get('/weather',cors(), function(req,res) {
+    var result = {
+        taipei:{},
+        seattle:{}
     }
-};
+    var taipeiQuery = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="taipei")AND u="c"');
+    var seattleQuesry = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="seattle")AND u="c"');
+    taipeiQuery.exec(function(err, data) {
+      var location = data.query.results.channel.location;
+      var condition = data.query.results.channel.item.condition;
+      result.taipei = data.query.results.channel;
+    });
 
-app.get('/next', cors(corsOptions), function(req, res) {
-    var APISamples = [];
-    var reportTempIndex = 0;
+    seattleQuesry.exec(function(err, data) {
+      var location = data.query.results.channel.location;
+      var condition = data.query.results.channel.item.condition;
+      result.seattle = data.query.results.channel;
+    });
 
-    for (var i = req.query.count - 1; i >= 0; i--) {
-        reportTempIndex++;
-        APISample.reportTempIndex = reportTempIndex;
-        APISamples.push(JSON.parse(JSON.stringify(APISample)));
-    }
-    APISamples[0].ENTITY_CODE = 'this is a different store';
-    res.json(APISamples);
+    setTimeout(function() {
+        res.json(result)
+    },1000);
 
-  //error testing
-   //  res.status(404)        // HTTP status 404: NotFound
-   // .send('Not found');
-});
-
-app.get('/ping', cors(corsOptions), function(req, res) {
-    res.json({isConnected: true});
 })
-
-app.post('/post', cors(corsOptions), function (req, res) {
-  res.send('success');
-});
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
+
+
