@@ -1,0 +1,5 @@
+--require test/dom.js
+--require should
+--reporter spec
+--compilers js:babel/register
+--recursive

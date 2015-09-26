@@ -1,0 +1,3979 @@
+{
+	"ENTITY_CODE": "phos123488",
+	"ENTITY_NAME": "Hosted Inc.",
+	"ENTITY_REVIEW_PERCENTAGE": 1,
+	"MESSAGE_TYPE": "POST_REVIEW",
+	"QUEUE_NAME": "FORRTE",
+	"ENTITY_AUDIT_TYPE": "STANDARD",
+	"RPT_KEY": 100005,
+	"AP_KEY": "A_PEND",
+	"EMP_KEY": 100007,
+	"EMP_LANG_CODE": "en",
+	"RANDOM_NO": 0.16574029449214933,
+	"AUDIT_START_DATE": "2012-09-28",
+	"QueueLog": [{
+		"QueueName": "FORRTE",
+		"Enqueue": "2012-Sep-28 15:59:31",
+		"Dequeue": "2012-Sep-28 16:00:43"
+	},
+	{
+		"QueueName": "123456",
+		"Enqueue": "2012-Sep-28 16:00:43",
+		"Dequeue": "2012-Sep-28 16:01:33"
+	},
+	{
+		"QueueName": "FORRTE",
+		"Enqueue": "2012-Sep-28 16:03:07",
+		"Dequeue": "2012-Sep-28 16:03:18"
+	},
+	{
+		"QueueName": "AWTRVW",
+		"Enqueue": "2012-Sep-28 16:03:18",
+		"Dequeue": "2012-Sep-28 16:03:23"
+	},
+	{
+		"QueueName": "FORRTE",
+		"Enqueue": "2012-Sep-28 16:05:05",
+		"Dequeue": "2012-Sep-28 16:05:13"
+	}],
+	"RuleLog": [{
+		"Rule": 6,
+		"Execution": "2012-Sep-28 16:00:43"
+	},
+	{
+		"Rule": 1,
+		"Execution": "2012-Sep-28 16:03:18"
+	},
+	{
+		"Rule": 3,
+		"Execution": "2012-Sep-28 16:05:13"
+	}],
+	"PROCESS_INSTANCE_KEY": 100007,
+	"NativeAuditProfile": {
+		"LangCode": "en",
+		"Questions": [{
+			"id": 62,
+			"question": "Is the receipt date, expense type and country of purchase correct?",
+			"control": "RADIO",
+			"sequenceNumber": 1,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "DCPR",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date & Country of Purchase incorrect",
+				"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type incorrect",
+				"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTNM",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date does not match",
+				"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 16
+				}]
+			},
+			{
+				"answerId": "EXIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type incorrect",
+				"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 5
+				}]
+			},
+			{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCPI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Country of Purchase incorrect",
+				"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NDEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type and Country are incorrect",
+				"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NETC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type & Country of purchase incorrect",
+				"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NORT",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "No Receipt",
+				"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 1
+				}]
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "URNC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Un-rececipted no comment",
+				"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+			},
+			{
+				"answerId": "URWC",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Un-rececipted with comment"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 63,
+			"question": "Is the value correct?",
+			"control": "RADIO",
+			"sequenceNumber": 2,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Information missing - Unable to Validate",
+				"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 64,
+			"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+			"control": "RADIO",
+			"sequenceNumber": 3,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCSP",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Credit card slip provided"
+			},
+			{
+				"answerId": "NONV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Other Non VAT (E.g. Pro-forma)"
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 65,
+			"question": "Is the Customer Name, Customer Address and a receipt ref\/invoice number shown of the receipt?",
+			"control": "RADIO",
+			"sequenceNumber": 4,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCSP",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Credit card slip provided"
+			},
+			{
+				"answerId": "NONV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Other Non VAT (E.g. Pro-forma)"
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+
+		{
+			"id": 68,
+			"question": "Is the claim currency correct?",
+			"control": "RADIO",
+			"sequenceNumber": 7,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 70,
+			"question": "Has the correct hire duration been selected?",
+			"control": "RADIO",
+			"sequenceNumber": 9,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The hire duration selection does not agree to the hire information provided on the receipt.  Please correct the hire duration and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "UTVL",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Unable to validate"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 72,
+			"question": "Has the correct fuel receipt been selected?",
+			"control": "RADIO",
+			"sequenceNumber": 11,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The fuel receipt you have provided does not agree to the car fuel type. Please either provide the correct fuel type receipt to support this claim or change the receipt status to 'No Receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 74,
+			"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+			"control": "RADIO",
+			"sequenceNumber": 13,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NRVD",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+			},
+			{
+				"answerId": "NSVD",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+			},
+			{
+				"answerId": "NVAD",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Different Tax amount is displayed on the receipt"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		}]
+	},
+	"Header": [{
+		"CurrentWorkflow": 100007,
+		"EmpKey": "100007",
+		"EmpFullName": "Jonas Dimsa",
+		"FormKey": 2,
+		"PolKey": 3,
+		"ReportId": "304F36106B584E0DB6F9",
+		"RptKey": "100005",
+		"Name": "Larger Test for review",
+		"ReportDate": "2012-09-28",
+		"TotalPostedAmount": "125.00000000",
+		"TotalClaimedAmount": "125.00000000",
+		"ReportDetails": {
+			"EmpKey": "100007",
+			"EmpFullName": "Jonas Dimsa",
+			"PolKey": 3,
+			"ReportDate": "2012-09-28",
+			"CrnKey": 3,
+			"RptKey": "100005",
+			"Name": "Larger Test for review",
+			"ReportId": "304F36106B584E0DB6F9",
+			"ReportIdForDisplay": "304F36106B584E0DB6F9",
+			"TotalPostedAmount": "125.00000000",
+			"TotalClaimedAmount": "125.00000000",
+			"IsLocked": false,
+			"IsInReview": false,
+			"AuditStartDate": "2012-09-28",
+			"AuditorCUUID": "55512",
+			"AuditorReviewPercentage": 1,
+			"ReceiptStatusOptions": "INCLUDE_TAX_RECEIPT_OPTION"
+		},
+		"EntityDetails": {
+			"EntityCode": "phos123488",
+			"EntityName": "Hosted Inc."
+		},
+		"CrnKey": 3,
+		"Questions": [],
+		"HasComments": "N",
+		"IsSplitable": true,
+		"exp": null
+	}],
+	"LineItem": [{
+		"ApprovedAmount": "56.00000000",
+		"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+		"LegibleReceiptRequired": true,
+		"CctKey": "",
+		"CrnKey": 3,
+		"ExpDesc": "Dinner - example of Receipt Eligibility required and Receipt Validation required",
+		"ExpKey": "DINNR",
+		"ExpCode": "",
+		"FormKey": 23,
+		"HasAttendees": "N",
+		"HasComments": "N",
+		"ImageRequired": true,
+		"IsTransactionForeign": false,
+		"RpeKey": "100005",
+		"ParentOrChild": "parent",
+		"ParentRpeKey": "",
+		"Personal": false,
+		"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+			"id": 62,
+			"question": "Is the receipt date, expense type and country of purchase correct?",
+			"control": "RADIO",
+			"sequenceNumber": 1,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "DCPR",
+				"state": "WARNING",
+				"severityLevel": 2,
+				"displayText": "Date & Country of Purchase incorrect",
+				"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type incorrect",
+				"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTNM",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date does not match",
+				"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 16
+				}]
+			},
+			{
+				"answerId": "EXIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type incorrect",
+				"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 5
+				}]
+			},
+			{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCPI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Country of Purchase incorrect",
+				"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NDEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type and Country are incorrect",
+				"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NETC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type & Country of purchase incorrect",
+				"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NORT",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "No Receipt",
+				"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 1
+				}]
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "URNC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Un-rececipted no comment",
+				"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+			},
+			{
+				"answerId": "URWC",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Un-rececipted with comment"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 63,
+			"question": "Is the value correct?",
+			"control": "RADIO",
+			"sequenceNumber": 2,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Information missing - Unable to Validate",
+				"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 64,
+			"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+			"control": "RADIO",
+			"sequenceNumber": 3,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCSP",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Credit card slip provided"
+			},
+			{
+				"answerId": "NONV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Other Non VAT (E.g. Pro-forma)"
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 68,
+			"question": "Is the claim currency correct?",
+			"control": "RADIO",
+			"sequenceNumber": 7,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 190,
+			"question": "Why is this charge needed?",
+			"control": "FILD",
+			"mustAnswer": true
+		},
+		{
+			"id": 190,
+			"question": "Please explain something here (Optional)",
+			"control": "FILD",
+			"mustAnswer": false
+		},
+		{
+			"id": 73,
+			"question": "Is a discretional tip included?",
+			"control": "RADIO",
+			"sequenceNumber": 12,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "NO"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 74,
+			"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+			"control": "RADIO",
+			"sequenceNumber": 13,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NRVD",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+			},
+			{
+				"answerId": "NSVD",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+			},
+			{
+				"answerId": "NVAD",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Different Tax amount is displayed on the receipt"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		}],
+		"RequestAmountPosted": "56.00000000",
+		"RequestAmountTransaction": "56.00000000",
+		"ReceiptRequired": false,
+		"SegmentId": "",
+		"SegmentTypeKey": "",
+		"Selectable": true,
+		"Status": 0,
+		"TransactionDate": "2012-09-07",
+		"TripId": "",
+		"_relationshipSortId": 0,
+		"IsSplitable": false,
+		"ImageID": "92E784CAE58E3BB9A52E0D10092895D1"
+	},
+	{
+		"ApprovedAmount": "23.00000000",
+		"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+		"LegibleReceiptRequired": false,
+		"CctKey": "",
+		"CrnKey": 3,
+		"ExpDesc": "Taxi - exapmle of Receipt Validation not required and radio text box",
+		"ExpKey": "TAXIX",
+		"ExpCode": "",
+		"FormKey": 23,
+		"HasAttendees": "N",
+		"HasComments": "N",
+		"ImageRequired": true,
+		"IsTransactionForeign": false,
+		"RpeKey": "100006",
+		"ParentOrChild": "parent",
+		"ParentRpeKey": "",
+		"Personal": false,
+		"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": [],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+			"id": 62,
+			"question": "Is the receipt date, expense type and country of purchase correct?",
+			"control": "RADIO",
+			"sequenceNumber": 1,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "DCPR",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date & Country of Purchase incorrect",
+				"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type incorrect",
+				"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTNM",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date does not match",
+				"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 16
+				}]
+			},
+			{
+				"answerId": "EXIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type incorrect",
+				"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 5
+				}]
+			},
+			{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCPI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Country of Purchase incorrect",
+				"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NDEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type and Country are incorrect",
+				"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NETC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type & Country of purchase incorrect",
+				"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NORT",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "No Receipt",
+				"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 1
+				}]
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "URNC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Un-rececipted no comment",
+				"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+			},
+			{
+				"answerId": "URWC",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Un-rececipted with comment"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 63,
+			"question": "Is the value correct?",
+			"control": "RADIO",
+			"sequenceNumber": 2,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Information missing - Unable to Validate",
+				"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 64,
+			"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+			"control": "RADIO",
+			"sequenceNumber": 3,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCSP",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Credit card slip provided"
+			},
+			{
+				"answerId": "NONV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Other Non VAT (E.g. Pro-forma)"
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 68,
+			"question": "Is the claim currency correct?",
+			"control": "RADIO",
+			"sequenceNumber": 7,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			},
+			{
+				"answerId": "CUSTM",
+				"state": "PASS",
+				"displayText": "Other"
+			}]
+		}],
+		"RequestAmountPosted": "23.00000000",
+		"RequestAmountTransaction": "23.00000000",
+		"ReceiptRequired": false,
+		"SegmentId": "",
+		"SegmentTypeKey": "",
+		"Selectable": true,
+		"Status": 0,
+		"TransactionDate": "2012-09-07",
+		"TripId": "",
+		"_relationshipSortId": 3,
+		"IsSplitable": false,
+		"ImageID": "ADAD07D530E535AC8809CAE23BC62AFB"
+	},
+	{
+		"ApprovedAmount": "46.00000000",
+		"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+		"LegibleReceiptRequired": false,
+		"CctKey": "",
+		"CrnKey": 3,
+		"ExpDesc": "Office Supplies",
+		"ExpKey": "OFCSP",
+		"ExpCode": "",
+		"FormKey": 23,
+		"HasAttendees": "N",
+		"HasComments": "N",
+		"ImageRequired": true,
+		"IsTransactionForeign": false,
+		"RpeKey": "100007",
+		"ParentOrChild": "parent",
+		"ParentRpeKey": "",
+		"Personal": false,
+		"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+			"id": 62,
+			"question": "Is the receipt date, expense type and country of purchase correct?",
+			"control": "RADIO",
+			"sequenceNumber": 1,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "DCPR",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date & Country of Purchase incorrect",
+				"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type incorrect",
+				"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "DTNM",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date does not match",
+				"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 16
+				}]
+			},
+			{
+				"answerId": "EXIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type incorrect",
+				"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 5
+				}]
+			},
+			{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCPI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Country of Purchase incorrect",
+				"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NDEI",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Date and Expense Type and Country are incorrect",
+				"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NETC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Expense Type & Country of purchase incorrect",
+				"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "NORT",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "No Receipt",
+				"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 1
+				}]
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "URNC",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Un-rececipted no comment",
+				"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+			},
+			{
+				"answerId": "URWC",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Un-rececipted with comment"
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 63,
+			"question": "Is the value correct?",
+			"control": "RADIO",
+			"sequenceNumber": 2,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Information missing - Unable to Validate",
+				"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+		{
+			"id": 64,
+			"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+			"control": "RADIO",
+			"sequenceNumber": 3,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NCSP",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Credit card slip provided"
+			},
+			{
+				"answerId": "NONV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Other Non VAT (E.g. Pro-forma)"
+			},
+			{
+				"answerId": "RTIL",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "Receipt illegible",
+				"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 2
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		},
+
+
+		{
+			"id": 68,
+			"question": "Is the claim currency correct?",
+			"control": "RADIO",
+			"sequenceNumber": 7,
+			"questionLevel": "L",
+			"resultId": "",
+			"possibleanswers": [{
+				"answerId": "IMUV",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Information missing - Unable to Validate"
+			},
+			{
+				"answerId": "NAXX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "Not Applicable"
+			},
+			{
+				"answerId": "NOXX",
+				"state": "FAIL",
+				"severityLevel": 2,
+				"displayText": "NO",
+				"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+				"reasonCodes": [{
+					"ReasonCodeKey": 13
+				}]
+			},
+			{
+				"answerId": "YESX",
+				"state": "PASS",
+				"severityLevel": 1,
+				"displayText": "YES"
+			}]
+		}],
+		"RequestAmountPosted": "46.00000000",
+		"RequestAmountTransaction": "46.00000000",
+		"ReceiptRequired": false,
+		"SegmentId": "",
+		"SegmentTypeKey": "",
+		"Selectable": true,
+		"Status": 0,
+		"TransactionDate": "2012-09-07",
+		"TripId": "",
+		"_relationshipSortId": 6,
+		"IsSplitable": false,
+		"ImageID": "A799575D3FE53BEABC9000AE079D8802"
+	}],
+	"AuditResults": [{
+		"Header": [{
+			"CurrentWorkflow": 100007,
+			"EmpKey": "100007",
+			"EmpFullName": "Jonas Dimsa",
+			"FormKey": 2,
+			"PolKey": 3,
+			"ReportId": "304F36106B584E0DB6F9",
+			"RptKey": "100005",
+			"Name": "Larger Test for review",
+			"ReportDate": "2012-09-28",
+			"TotalPostedAmount": "125.00000000",
+			"TotalClaimedAmount": "125.00000000",
+			"ReportDetails": {
+				"EmpKey": "100007",
+				"EmpFullName": "Jonas Dimsa",
+				"PolKey": 3,
+				"ReportDate": "2012-09-28",
+				"CrnKey": 3,
+				"RptKey": "100005",
+				"Name": "Larger Test for review",
+				"ReportId": "304F36106B584E0DB6F9",
+				"ReportIdForDisplay": "304F36106B584E0DB6F9",
+				"TotalPostedAmount": "125.00000000",
+				"TotalClaimedAmount": "125.00000000",
+				"IsLocked": false,
+				"IsInReview": false,
+				"AuditStartDate": "2012-09-28",
+				"AuditorCUUID": "55512",
+				"AuditorReviewPercentage": 1,
+				"ReceiptStatusOptions": "INCLUDE_TAX_RECEIPT_OPTION"
+			},
+			"EntityDetails": {
+				"EntityCode": "phos123488",
+				"EntityName": "Hosted Inc."
+			},
+			"CrnKey": 3,
+			"Questions": [],
+			"HasComments": "N",
+			"IsSplitable": true,
+			"exp": null
+		}],
+		"LineItem": [{
+			"ApprovedAmount": "56.00000000",
+			"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+			"LegibleReceiptRequired": true,
+			"CctKey": "",
+			"CrnKey": 3,
+			"ExpDesc": "Dinner",
+			"ExpKey": "DINNR",
+			"ExpCode": "",
+			"FormKey": 23,
+			"HasAttendees": "N",
+			"HasComments": "N",
+			"ImageRequired": true,
+			"IsTransactionForeign": false,
+			"RpeKey": "100005",
+			"ParentOrChild": "parent",
+			"ParentRpeKey": "",
+			"Personal": false,
+			"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+				"id": 62,
+				"question": "Is the receipt date, expense type and country of purchase correct?",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "DCPR",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date & Country of Purchase incorrect",
+					"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type incorrect",
+					"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTNM",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date does not match",
+					"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "EXIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type incorrect",
+					"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCPI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Country of Purchase incorrect",
+					"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NDEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type and Country are incorrect",
+					"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NETC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type & Country of purchase incorrect",
+					"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No Receipt",
+					"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 1
+					}]
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "URNC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Un-rececipted no comment",
+					"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+				},
+				{
+					"answerId": "URWC",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Un-rececipted with comment"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 63,
+				"question": "Is the value correct?",
+				"control": "RADIO",
+				"sequenceNumber": 2,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Information missing - Unable to Validate",
+					"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 64,
+				"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+				"control": "RADIO",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCSP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Credit card slip provided"
+				},
+				{
+					"answerId": "NONV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Other Non VAT (E.g. Pro-forma)"
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 68,
+				"question": "Is the claim currency correct?",
+				"control": "RADIO",
+				"sequenceNumber": 7,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 73,
+				"question": "Is a discretional tip included?",
+				"control": "RADIO",
+				"sequenceNumber": 12,
+				"questionLevel": "L",
+				"resultId": "NOXX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "NO"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 74,
+				"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+				"control": "RADIO",
+				"sequenceNumber": 13,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NRVD",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+				},
+				{
+					"answerId": "NSVD",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+				},
+				{
+					"answerId": "NVAD",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Different Tax amount is displayed on the receipt"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			}],
+			"RequestAmountPosted": "56.00000000",
+			"RequestAmountTransaction": "56.00000000",
+			"ReceiptRequired": false,
+			"SegmentId": "",
+			"SegmentTypeKey": "",
+			"Selectable": true,
+			"Status": 1,
+			"TransactionDate": "2012-09-07",
+			"TripId": "",
+			"_relationshipSortId": 0,
+			"IsSplitable": false,
+			"ImageID": "92E784CAE58E3BB9A52E0D10092895D1"
+		},
+		{
+			"ApprovedAmount": "23.00000000",
+			"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+			"LegibleReceiptRequired": false,
+			"CctKey": "",
+			"CrnKey": 3,
+			"ExpDesc": "Taxi",
+			"ExpKey": "TAXIX",
+			"ExpCode": "",
+			"FormKey": 23,
+			"HasAttendees": "N",
+			"HasComments": "N",
+			"ImageRequired": true,
+			"IsTransactionForeign": false,
+			"RpeKey": "100006",
+			"ParentOrChild": "parent",
+			"ParentRpeKey": "",
+			"Personal": false,
+			"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+				"id": 62,
+				"question": "Is the receipt date, expense type and country of purchase correct?",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "DCPR",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date & Country of Purchase incorrect",
+					"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type incorrect",
+					"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTNM",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date does not match",
+					"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "EXIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type incorrect",
+					"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCPI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Country of Purchase incorrect",
+					"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NDEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type and Country are incorrect",
+					"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NETC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type & Country of purchase incorrect",
+					"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No Receipt",
+					"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 1
+					}]
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "URNC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Un-rececipted no comment",
+					"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+				},
+				{
+					"answerId": "URWC",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Un-rececipted with comment"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 63,
+				"question": "Is the value correct?",
+				"control": "RADIO",
+				"sequenceNumber": 2,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Information missing - Unable to Validate",
+					"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 64,
+				"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+				"control": "RADIO",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCSP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Credit card slip provided"
+				},
+				{
+					"answerId": "NONV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Other Non VAT (E.g. Pro-forma)"
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 68,
+				"question": "Is the claim currency correct?",
+				"control": "RADIO",
+				"sequenceNumber": 7,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			}],
+			"RequestAmountPosted": "23.00000000",
+			"RequestAmountTransaction": "23.00000000",
+			"ReceiptRequired": false,
+			"SegmentId": "",
+			"SegmentTypeKey": "",
+			"Selectable": true,
+			"Status": 1,
+			"TransactionDate": "2012-09-07",
+			"TripId": "",
+			"_relationshipSortId": 3,
+			"IsSplitable": false,
+			"ImageID": "ADAD07D530E535AC8809CAE23BC62AFB"
+		},
+		{
+			"ApprovedAmount": "46.00000000",
+			"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+			"LegibleReceiptRequired": false,
+			"CctKey": "",
+			"CrnKey": 3,
+			"ExpDesc": "Office Supplies",
+			"ExpKey": "OFCSP",
+			"ExpCode": "",
+			"FormKey": 23,
+			"HasAttendees": "N",
+			"HasComments": "N",
+			"ImageRequired": true,
+			"IsTransactionForeign": false,
+			"RpeKey": "100007",
+			"ParentOrChild": "parent",
+			"ParentRpeKey": "",
+			"Personal": false,
+			"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+				"id": 62,
+				"question": "Is the receipt date, expense type and country of purchase correct?",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "DCPR",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date & Country of Purchase incorrect",
+					"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type incorrect",
+					"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTNM",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date does not match",
+					"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "EXIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type incorrect",
+					"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCPI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Country of Purchase incorrect",
+					"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NDEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type and Country are incorrect",
+					"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NETC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type & Country of purchase incorrect",
+					"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No Receipt",
+					"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 1
+					}]
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "URNC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Un-rececipted no comment",
+					"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+				},
+				{
+					"answerId": "URWC",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Un-rececipted with comment"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 63,
+				"question": "Is the value correct?",
+				"control": "RADIO",
+				"sequenceNumber": 2,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Information missing - Unable to Validate",
+					"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 64,
+				"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+				"control": "RADIO",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCSP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Credit card slip provided"
+				},
+				{
+					"answerId": "NONV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Other Non VAT (E.g. Pro-forma)"
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 68,
+				"question": "Is the claim currency correct?",
+				"control": "RADIO",
+				"sequenceNumber": 7,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			}],
+			"RequestAmountPosted": "46.00000000",
+			"RequestAmountTransaction": "46.00000000",
+			"ReceiptRequired": false,
+			"SegmentId": "",
+			"SegmentTypeKey": "",
+			"Selectable": true,
+			"Status": 1,
+			"TransactionDate": "2012-09-07",
+			"TripId": "",
+			"_relationshipSortId": 6,
+			"IsSplitable": false,
+			"ImageID": "A799575D3FE53BEABC9000AE079D8802"
+		}]
+	},
+	{
+		"Header": [{
+			"CurrentWorkflow": 100007,
+			"EmpKey": "100007",
+			"EmpFullName": "Jonas Dimsa",
+			"FormKey": 2,
+			"PolKey": 3,
+			"ReportId": "304F36106B584E0DB6F9",
+			"RptKey": "100005",
+			"Name": "Larger Test for review",
+			"ReportDate": "2012-09-28",
+			"TotalPostedAmount": "125.00000000",
+			"TotalClaimedAmount": "125.00000000",
+			"ReportDetails": {
+				"EmpKey": "100007",
+				"EmpFullName": "Jonas Dimsa",
+				"PolKey": 3,
+				"ReportDate": "2012-09-28",
+				"CrnKey": 3,
+				"RptKey": "100005",
+				"Name": "Larger Test for review",
+				"ReportId": "304F36106B584E0DB6F9",
+				"ReportIdForDisplay": "304F36106B584E0DB6F9",
+				"TotalPostedAmount": "125.00000000",
+				"TotalClaimedAmount": "125.00000000",
+				"IsLocked": false,
+				"IsInReview": false,
+				"AuditStartDate": "2012-09-28",
+				"AuditorCUUID": "55512",
+				"AuditorReviewPercentage": 1,
+				"ReceiptStatusOptions": "INCLUDE_TAX_RECEIPT_OPTION"
+			},
+			"EntityDetails": {
+				"EntityCode": "phos123488",
+				"EntityName": "Hosted Inc."
+			},
+			"CrnKey": 3,
+			"Questions": [],
+			"HasComments": "N",
+			"IsSplitable": true,
+			"exp": null
+		}],
+		"LineItem": [{
+			"ApprovedAmount": "56.00000000",
+			"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+			"LegibleReceiptRequired": true,
+			"CctKey": "",
+			"CrnKey": 3,
+			"ExpDesc": "Dinner",
+			"ExpKey": "DINNR",
+			"ExpCode": "",
+			"FormKey": 23,
+			"HasAttendees": "N",
+			"HasComments": "N",
+			"ImageRequired": true,
+			"IsTransactionForeign": false,
+			"RpeKey": "100005",
+			"ParentOrChild": "parent",
+			"ParentRpeKey": "",
+			"Personal": false,
+			"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+				"id": 62,
+				"question": "Is the receipt date, expense type and country of purchase correct?",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "IMUV",
+				"possibleanswers": [{
+					"answerId": "DCPR",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date & Country of Purchase incorrect",
+					"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type incorrect",
+					"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTNM",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date does not match",
+					"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "EXIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type incorrect",
+					"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCPI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Country of Purchase incorrect",
+					"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NDEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type and Country are incorrect",
+					"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NETC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type & Country of purchase incorrect",
+					"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No Receipt",
+					"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 1
+					}]
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "URNC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Un-rececipted no comment",
+					"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+				},
+				{
+					"answerId": "URWC",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Un-rececipted with comment"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 63,
+				"question": "Is the value correct?",
+				"control": "RADIO",
+				"sequenceNumber": 2,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Information missing - Unable to Validate",
+					"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 64,
+				"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+				"control": "RADIO",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCSP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Credit card slip provided"
+				},
+				{
+					"answerId": "NONV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Other Non VAT (E.g. Pro-forma)"
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 68,
+				"question": "Is the claim currency correct?",
+				"control": "RADIO",
+				"sequenceNumber": 7,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 73,
+				"question": "Is a discretional tip included?",
+				"control": "RADIO",
+				"sequenceNumber": 12,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "NO"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 74,
+				"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+				"control": "RADIO",
+				"sequenceNumber": 13,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NRVD",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+				},
+				{
+					"answerId": "NSVD",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+				},
+				{
+					"answerId": "NVAD",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Different Tax amount is displayed on the receipt"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			}],
+			"RequestAmountPosted": "56.00000000",
+			"RequestAmountTransaction": "56.00000000",
+			"ReceiptRequired": false,
+			"SegmentId": "",
+			"SegmentTypeKey": "",
+			"Selectable": true,
+			"Status": 1,
+			"TransactionDate": "2012-09-07",
+			"TripId": "",
+			"_relationshipSortId": 0,
+			"IsSplitable": false,
+			"ImageID": "92E784CAE58E3BB9A52E0D10092895D1"
+		},
+		{
+			"ApprovedAmount": "23.00000000",
+			"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+			"LegibleReceiptRequired": false,
+			"CctKey": "",
+			"CrnKey": 3,
+			"ExpDesc": "Taxi",
+			"ExpKey": "TAXIX",
+			"ExpCode": "",
+			"FormKey": 23,
+			"HasAttendees": "N",
+			"HasComments": "N",
+			"ImageRequired": true,
+			"IsTransactionForeign": false,
+			"RpeKey": "100006",
+			"ParentOrChild": "parent",
+			"ParentRpeKey": "",
+			"Personal": false,
+			"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+				"id": 62,
+				"question": "Is the receipt date, expense type and country of purchase correct?",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "DCPR",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date & Country of Purchase incorrect",
+					"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type incorrect",
+					"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTNM",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date does not match",
+					"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "EXIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type incorrect",
+					"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCPI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Country of Purchase incorrect",
+					"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NDEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type and Country are incorrect",
+					"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NETC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type & Country of purchase incorrect",
+					"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No Receipt",
+					"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 1
+					}]
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "URNC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Un-rececipted no comment",
+					"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+				},
+				{
+					"answerId": "URWC",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Un-rececipted with comment"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 63,
+				"question": "Is the value correct?",
+				"control": "RADIO",
+				"sequenceNumber": 2,
+				"questionLevel": "L",
+				"resultId": "NAXX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Information missing - Unable to Validate",
+					"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 64,
+				"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+				"control": "RADIO",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCSP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Credit card slip provided"
+				},
+				{
+					"answerId": "NONV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Other Non VAT (E.g. Pro-forma)"
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 68,
+				"question": "Is the claim currency correct?",
+				"control": "RADIO",
+				"sequenceNumber": 7,
+				"questionLevel": "L",
+				"resultId": "NAXX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			}],
+			"RequestAmountPosted": "23.00000000",
+			"RequestAmountTransaction": "23.00000000",
+			"ReceiptRequired": false,
+			"SegmentId": "",
+			"SegmentTypeKey": "",
+			"Selectable": true,
+			"Status": 1,
+			"TransactionDate": "2012-09-07",
+			"TripId": "",
+			"_relationshipSortId": 3,
+			"IsSplitable": false,
+			"ImageID": "ADAD07D530E535AC8809CAE23BC62AFB"
+		},
+		{
+			"ApprovedAmount": "46.00000000",
+			"LinePictures": [{"url":"https://upload.wikimedia.org/wikipedia/commons/0/0b/ReceiptSwiss.jpg"}, {"url":"http://s3-media4.fl.yelpcdn.com/bphoto/eTxwKJdgj_jLmMhIqItO4A/o.jpg"}, {"url":"http://s3-media2.fl.yelpcdn.com/bphoto/XtRAlFu9Asiez68rTAi_nQ/348s.jpg"}],
+			"LegibleReceiptRequired": false,
+			"CctKey": "",
+			"CrnKey": 3,
+			"ExpDesc": "Office Supplies",
+			"ExpKey": "OFCSP",
+			"ExpCode": "",
+			"FormKey": 23,
+			"HasAttendees": "N",
+			"HasComments": "N",
+			"ImageRequired": true,
+			"IsTransactionForeign": false,
+			"RpeKey": "100007",
+			"ParentOrChild": "parent",
+			"ParentRpeKey": "",
+			"Personal": false,
+			"Questions": [{
+				"id": 1,
+				"question": "Receipt Eligibility",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "",
+				"possibleanswers": [{
+					"answerId": "LGRT",
+					"state": "PASS",
+					"severityLevel": 2,
+					"displayText": "Legible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "WRRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Wrong Receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "IGRT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Illegible receipt",
+					"comment": "",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "NTAP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not applicable"
+				}]
+			},{
+				"id": 64,
+				"question": "Receipt Validation",
+				"control": "CHECKBOX",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultIds": [],
+				"mustSelect": ["PMDT","VNDR"],
+				"possibleanswers": [{
+					"answerId": "PMDT",
+					"displayText": "Payment date is between 2015/2/15 - 2015/5/20"
+				},
+				{
+					"answerId": "AMTX",
+					"displayText": "Amount is 22.39 GBP"
+				},
+				{
+					"answerId": "VNDR",
+					"displayText": "Vendor is Dishoom"
+				},
+				{
+					"answerId": "EXTP",
+					"displayText": "Expense Type is Meals/Entertainment"
+				},{
+					"answerId": "PMMD",
+					"displayText": "Payment method is Corporate Card"
+				}]
+			},{
+				"id": 62,
+				"question": "Is the receipt date, expense type and country of purchase correct?",
+				"control": "RADIO",
+				"sequenceNumber": 1,
+				"questionLevel": "L",
+				"resultId": "DTNM",
+				"possibleanswers": [{
+					"answerId": "DCPR",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date & Country of Purchase incorrect",
+					"comment": "The date of the receipt,  and the country\/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type incorrect",
+					"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "DTNM",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date does not match",
+					"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 16
+					}]
+				},
+				{
+					"answerId": "EXIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type incorrect",
+					"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 5
+					}]
+				},
+				{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCPI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Country of Purchase incorrect",
+					"comment": "The country\/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NDEI",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Date and Expense Type and Country are incorrect",
+					"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NETC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Expense Type & Country of purchase incorrect",
+					"comment": "The expense type claimed and the country \/location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "NORT",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "No Receipt",
+					"comment": "A supporting receipt\/invoice has not been provided. Please provide a receipt for this expense or correct the receipt status selected for claim. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 1
+					}]
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "URNC",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Un-rececipted no comment",
+					"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit."
+				},
+				{
+					"answerId": "URWC",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Un-rececipted with comment"
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 63,
+				"question": "Is the value correct?",
+				"control": "RADIO",
+				"sequenceNumber": 2,
+				"questionLevel": "L",
+				"resultId": "YESX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Information missing - Unable to Validate",
+					"comment": "The  receipt does not cover \/ show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 64,
+				"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+				"control": "RADIO",
+				"sequenceNumber": 3,
+				"questionLevel": "L",
+				"resultId": "RTIL",
+				"possibleanswers": [{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NCSP",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Credit card slip provided"
+				},
+				{
+					"answerId": "NONV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Other Non VAT (E.g. Pro-forma)"
+				},
+				{
+					"answerId": "RTIL",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "Receipt illegible",
+					"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 2
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			},
+			{
+				"id": 68,
+				"question": "Is the claim currency correct?",
+				"control": "RADIO",
+				"sequenceNumber": 7,
+				"questionLevel": "L",
+				"resultId": "NOXX",
+				"possibleanswers": [{
+					"answerId": "IMUV",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Information missing - Unable to Validate"
+				},
+				{
+					"answerId": "NAXX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "Not Applicable"
+				},
+				{
+					"answerId": "NOXX",
+					"state": "FAIL",
+					"severityLevel": 2,
+					"displayText": "NO",
+					"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+					"reasonCodes": [{
+						"ReasonCodeKey": 13
+					}]
+				},
+				{
+					"answerId": "YESX",
+					"state": "PASS",
+					"severityLevel": 1,
+					"displayText": "YES"
+				}]
+			}],
+			"RequestAmountPosted": "46.00000000",
+			"RequestAmountTransaction": "46.00000000",
+			"ReceiptRequired": false,
+			"SegmentId": "",
+			"SegmentTypeKey": "",
+			"Selectable": true,
+			"Status": 1,
+			"TransactionDate": "2012-09-07",
+			"TripId": "",
+			"_relationshipSortId": 6,
+			"IsSplitable": false,
+			"ImageID": "A799575D3FE53BEABC9000AE079D8802"
+		}]
+	}]
+}

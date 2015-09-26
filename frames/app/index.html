@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width">
+
+      <title>App Name</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      <style>
+
+        body{
+            background-color: #F5F5F5;
+        }
+
+        .card{
+            height: 250px;
+            box-shadow: 3px 3px #D0D0D0 ;
+        }
+
+        .bigCard{
+            height: 500px;
+            box-shadow: 3px 3px #D0D0D0 ;
+        }
+
+        .card:hover{
+            height: 251px;
+        }
+        .bigCard:hover{
+            height: 501px;
+        }
+
+        .pin {
+            display: inline-block;
+            background: #FEFEFE;
+            border: 2px solid #FAFAFA;
+            box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+            margin: 0 2px 2px;
+            -webkit-column-break-inside: avoid;
+            -moz-column-break-inside: avoid;
+            column-break-inside: avoid;
+            padding: 2px;
+            padding-bottom: 5px;
+            background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+            opacity: 1;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            -o-transition: all .2s ease;
+            transition: all .2s ease;
+        }
+        .pin img {
+            width: 100px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+        }
+
+
+        /*********** Clock *************/
+
+        .circle {
+          width: 240px;
+          height: 240px;
+          position: relative;
+          border: 12px solid #000;
+          border-radius: 50%;
+          background: url(http://i.imgur.com/LQ4S51k.png);
+          background-size: 240px 240px;
+          background-repeat: no-repeat;
+        }
+
+        .face {
+          width: 100%;
+          height: 100%;
+        }
+
+        .face:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 12px;
+          height: 12px;
+          margin: -6px 0 0 -6px;
+          background: #000;
+          border-radius: 6px;
+          content: "";
+          display: block;
+        }
+
+
+        .hour {
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -4px 0 -4px -25%;
+          padding: 4px 0 4px 25%;
+          background: #000;
+          transform-origin: 100% 50%;
+        }
+
+        .minute {
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -40% -3px 0;
+          padding: 40% 3px 0;
+          background: #000;
+          transform-origin: 50% 100%;
+        }
+
+        .second {
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -40% -1px 0 0;
+          padding: 40% 1px 0;
+          background: #D40000;
+          transform-origin: 50% 100%;
+        }
+
+
+      </style>
+  </head>
+  <body>
+
+    <div id="app"></div>
+<!--     <canvas id="canvas" width="490" height="220"></canvas>
+ -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <script src="/js/main.js"></script>
+
+  </body>
+</html>
