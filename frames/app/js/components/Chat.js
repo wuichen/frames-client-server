@@ -1,5 +1,6 @@
 import React from 'react/addons';
 var Firebase = require("firebase");
+import classNames from 'classnames';
 
 
 var messagesHub = new Firebase("https://swu-ptien.firebaseio.com/chat");
@@ -32,15 +33,18 @@ var Chat = React.createClass({
     },
     _sendMessage: function() {
         var self = this;
-        messagesHub.push({
-          user:self.props.user.name, message: self.state.newMessage
-        },function(error){
-            if(!error){
-                self.setState({
-                    newMessage: ''
-                })
-            }
-        });
+        if(this.state.newMessage.length > 0){
+            messagesHub.push({
+              user:self.props.user.name, message: self.state.newMessage
+            },function(error){
+                if(!error){
+                    self.setState({
+                        newMessage: ''
+                    })
+                }
+            });
+        }
+
     },
     _enterPressed: function (e) {
       console.log(e.keyCode)
@@ -51,9 +55,9 @@ var Chat = React.createClass({
     render: function() {
         var self = this;
         return (
-            <div>
-                <div style={{height: '50px', backgroundColor:'dodgerblue', fontSize:'20px', padding:'10px', color:'white', fontWeight:'100'}}>Chat</div>
-                <div id='chatBox' style={{height: '375px', overflow: 'scroll', padding: '15px 15px 0px 15px'}}>
+            <div style={{height:'90vh'}}>
+                <div style={{height: '10vh', backgroundColor:'#e91e63', fontSize:'20px', padding:'10px', color:'white', fontWeight:'100'}}>Messages</div>
+                <div id='chatBox' style={{height: '70vh', overflow: 'scroll', padding: '15px 15px 0px 15px'}}>
                     {self.state.messages.map( function (message, index){
                         if(message.user === self.props.user.name){
                             return(
@@ -74,8 +78,8 @@ var Chat = React.createClass({
                     })}
                 </div>
 
-                <div style={{height: '75px', padding: '15px', display:'flex', justifyContent:'space-between',alignItems:'center', backgroundColor:'dodgerblue'}}>
-                    <textarea style={{resize:'none',borderColor:'white', width:'80%',borderRadius: '5px'}} type='text' onKeyDown={this._enterPressed} value={this.state.newMessage} onChange={this._updateMessage}></textarea><div className='btn btn-primary btn-xs' onClick={this._sendMessage}>send</div>
+                <div style={{height: '10vh', padding: '15px', display:'flex', justifyContent:'space-between',alignItems:'center', backgroundColor:'#e91e63'}}>
+                    <textarea style={{resize:'none',backgroundColor:'white',borderColor:'white', width:'80%',borderRadius: '5px'}} type='text' onKeyDown={this._enterPressed} value={this.state.newMessage} onChange={this._updateMessage}></textarea><div className={classNames('btn', 'btn-primary' ,'btn-xs')} onClick={this._sendMessage}>send</div>
                 </div>
             </div>
         )
